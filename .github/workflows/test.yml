@@ -1,0 +1,30 @@
+name: test
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 14
+
+    - name: Install modules
+      run: yarn install
+
+    - name: Unit tests
+      run: yarn test
+
+    - name: Check codestyle
+      uses: reviewdog/action-eslint@v1.17
+      with:
+        reporter: ${{ github.event_name == 'pull_request' && 'github-pr-review' || 'github-check' }}
+        fail_on_error: "true"

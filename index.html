@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Language" content="uk">
+        <title>Trasliteration of the Ukrainian language</title>
+        <script type="text/javascript" src="dist/transliteration.min.js"></script>
+    </head>
+    <body>
+        <div class="content">
+            <h1 style="text-align: center;">Trasliteration of the Ukrainian language</h1>
+            <p><strong>Bla bla bla</strong><br>
+            TBD: Some rules
+            </p>
+            <form name="formText" style="text-align: center;">
+                <textarea style="width: 100%;" rows="17" name="editSrc"></textarea>
+                <input onclick="this.form.editSrc.value=transliteration.uk.fromCyrillic(this.form.editSrc.value)" name="buttonConvert" type="button" value="Cyrillic &gt; Latin">
+                <input type="reset" value="reset">
+                <input onclick="this.form.editSrc.value=transliteration.uk.toCyrillic(this.form.editSrc.value)" name="buttonConvert" type="button" value="Latin &gt; Cyrillic">
+            </form>
+            <p>Some info</p>
+            <h4>Contacts</h4>
+        </div>
+        <script type="text/javascript">
+            console.log('transliteration.uk.version=' + transliteration.uk.version);
+        </script>
+    </body>
+</html>
