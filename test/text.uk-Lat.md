@@ -20,11 +20,11 @@ Ja ne znaü boha.
 
 Poḣovajte ta vstavajte.
 Kajdany porvite
-i vrażoü zloü krov'ü
+i vrażoü zloü krovü
 Volü okropite.
-i mene v sim'ï velykij,
-V sim'ï voḷnij, novij
-Ne zabuḍte pom'januty
+i mene v simï velykij,
+V simï voḷnij, novij
+Ne zabuḍte pomjanuty
 Nezlym tyḣym slovom.
 
 25 hrudnja 1845 v Perejaslavi
